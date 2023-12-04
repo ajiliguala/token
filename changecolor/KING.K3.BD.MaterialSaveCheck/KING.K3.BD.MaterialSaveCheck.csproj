@@ -56,7 +56,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="11123.cs" />
     <Compile Include="ChangeColor.cs" />
     <Compile Include="EXPENSEBUDGET_Save_CheckDateOverlap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
