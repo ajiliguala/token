@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yunzhijia", "yunzhijia.csproj", "{6FB7DB7F-EF0B-4FDD-A29E-7CAF89D542B6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "yunzhijiaSetup", "..\yunzhijiaSetup\yunzhijiaSetup.vdproj", "{5628C8B1-72FD-4AC2-9A17-EBC2515AD61E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FB7DB7F-EF0B-4FDD-A29E-7CAF89D542B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB7DB7F-EF0B-4FDD-A29E-7CAF89D542B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB7DB7F-EF0B-4FDD-A29E-7CAF89D542B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB7DB7F-EF0B-4FDD-A29E-7CAF89D542B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5628C8B1-72FD-4AC2-9A17-EBC2515AD61E}.Debug|Any CPU.ActiveCfg = Debug
+		{5628C8B1-72FD-4AC2-9A17-EBC2515AD61E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0FB142B-600A-4D75-B921-9D4CC411F8AB}
+	EndGlobalSection
+EndGlobal
