@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{32D1801D-9133-4195-9F1F-060ACDBC4248}</ProjectGuid>
+    <ProjectGuid>{E4F5769A-AD43-42FD-927A-77965113EB7B}</ProjectGuid>
     <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>King.K3.BD.App.Common.ServicePlugIn</RootNamespace>
     <AssemblyName>King.K3.BD.App.Common.ServicePlugIn</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -21,21 +21,19 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Kingdee.BOS">
-      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.dll</HintPath>
+    <Reference Include="Kingdee.BOS, Version=8.1.410.13, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Desktop\Kingdee.BOS.dll</HintPath>
     </Reference>
     <Reference Include="Kingdee.BOS.App">
       <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.App.dll</HintPath>
@@ -49,23 +47,17 @@
     <Reference Include="Kingdee.BOS.WebApi.FormService">
       <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.WebApi.FormService.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Net.Http">
       <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\System.Net.Http.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Material\Allocate.cs" />
-    <Compile Include="Material\GetYunzhijia.cs" />
-    <Compile Include="Material\KingdeeWebApi.cs" />
-    <Compile Include="Material\SaveCheak.cs" />
-    <Compile Include="Material\ToYunzhijia.cs" />
-    <Compile Include="Material\yunzhijiaInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

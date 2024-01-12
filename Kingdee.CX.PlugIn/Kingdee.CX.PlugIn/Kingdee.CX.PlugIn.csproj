@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74FB6E4A-55BF-45FA-B678-7567C159BAA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Kingdee.CX.PlugIn</RootNamespace>
+    <AssemblyName>Kingdee.CX.PlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceFacade.KDServiceFx">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.ServiceFacade.KDServiceFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Toolkit">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.WebApi.ServicesStub">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.WebApi.ServicesStub.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AP_Payable_Service.cs" />
+    <Compile Include="AP_Payable_UnAudit_Service.cs" />
+    <Compile Include="AP_PAYBILL_Service.cs" />
+    <Compile Include="AP_PAYBILL_UnAudit_Service.cs" />
+    <Compile Include="BD_Supplier_Service.cs" />
+    <Compile Include="BomChild.cs" />
+    <Compile Include="BomQueryForward_CustomService.cs" />
+    <Compile Include="BookBalance.cs" />
+    <Compile Include="BookBalanceRem.cs" />
+    <Compile Include="CN_PAYAPPLY_Service.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="OperationMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PUR_MRB_Service.cs" />
+    <Compile Include="PUR_MRB_UnAudit_Service.cs" />
+    <Compile Include="PUR_PurchaseOrder_Service.cs" />
+    <Compile Include="PUR_ReceiveBill_Service.cs" />
+    <Compile Include="PUR_Requisition_Service.cs" />
+    <Compile Include="QM_InspectBill_Service.cs" />
+    <Compile Include="ResponseInfo.cs" />
+    <Compile Include="SrmResponseInfo.cs" />
+    <Compile Include="SRMStatus.cs" />
+    <Compile Include="STK_InStock_Service.cs" />
+    <Compile Include="STK_InStock_SRM_Service.cs" />
+    <Compile Include="STK_InStock_UnAudit_Service.cs" />
+    <Compile Include="SUBPrdStatisRpt.cs" />
+    <Compile Include="UpdateSrmStatus_Service.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
