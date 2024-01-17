@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1DD52185-A472-4ACC-A522-5DA23F5F1A3D}</ProjectGuid>
+    <ProjectGuid>{271F0009-50B4-47C4-A5CB-26D0743D9AF5}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TOKEN.WIPRPT</RootNamespace>
-    <AssemblyName>TOKEN.WIPRPT</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Kingdee.Wychl.Token.Business</RootNamespace>
+    <AssemblyName>Kingdee.Wychl.Token.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,17 +52,70 @@
     <Reference Include="Kingdee.BOS.ServiceHelper">
       <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.ServiceHelper.dll</HintPath>
     </Reference>
+    <Reference Include="Kingdee.BOS.WebApi.Client">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.WebApi.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.WebApi.FormService">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.WebApi.FormService.dll</HintPath>
+    </Reference>
     <Reference Include="Kingdee.K3.FIN.App.Core">
       <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.FIN.App.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\圣凯\圣凯\demo\yunzhijia\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PRDRPT.cs" />
+    <Compile Include="ApiClient.cs" />
+    <Compile Include="apiParameter.cs" />
+    <Compile Include="autoAssociatedBom.cs" />
+    <Compile Include="AutoSubmit.cs" />
+    <Compile Include="batchAddBill.cs" />
+    <Compile Include="batchParm.cs" />
+    <Compile Include="billParameter.cs" />
+    <Compile Include="CKHZQD.cs" />
+    <Compile Include="CKMYTJB.cs" />
+    <Compile Include="FYBYD_Save_CheckFYYS.cs" />
+    <Compile Include="getFile.cs" />
+    <Compile Include="getStockStatus.cs" />
+    <Compile Include="getSubFile.cs" />
+    <Compile Include="IOSAPSettlementSubmit.cs" />
+    <Compile Include="JKMYTJB.cs" />
+    <Compile Include="JLJGHZQD.cs" />
+    <Compile Include="JQHZQD.cs" />
+    <Compile Include="MyPatchPrintAction.cs" />
+    <Compile Include="orgFilter.cs" />
+    <Compile Include="overdueManage.cs" />
+    <Compile Include="PlanBill.cs" />
+    <Compile Include="planSubmit.cs" />
+    <Compile Include="PrdInstockFilter.cs" />
+    <Compile Include="PRDMoSplit.cs" />
+    <Compile Include="prdMoSubmit.cs" />
+    <Compile Include="PrdReturnMtrlSubmit.cs" />
+    <Compile Include="PriceAudit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proUnAudit.cs" />
+    <Compile Include="purOrderAudit.cs" />
+    <Compile Include="purOrderList.cs" />
+    <Compile Include="purOrderUnAudit.cs" />
+    <Compile Include="PURPriceListEdit.cs" />
+    <Compile Include="salOutStock2stkInStock.cs" />
+    <Compile Include="SalOutStockSumRpt.cs" />
+    <Compile Include="serviceHelper.cs" />
+    <Compile Include="StkMiscellaneousSubmit.cs" />
+    <Compile Include="StkMiscellaneousUnAudit.cs" />
+    <Compile Include="StkMisdeliverySubmit.cs" />
+    <Compile Include="StkMisdeliveryUnAudit.cs" />
+    <Compile Include="Stk_StktransferinSubmit.cs" />
+    <Compile Include="Stk_StktransferinUnAudit.cs" />
+    <Compile Include="WIPReport.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
