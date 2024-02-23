@@ -301,5 +301,10 @@
     <Compile Include="Utils\ENGBillUtil.cs" />
     <Compile Include="Utils\LadderLossUtils.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

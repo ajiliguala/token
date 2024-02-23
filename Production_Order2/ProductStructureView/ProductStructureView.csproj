@@ -79,6 +79,9 @@
     <Reference Include="Kingdee.K3.MFG.ENG.Common.Core">
       <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.ENG.Common.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Kingdee.K3.MFG.PRD.Common.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.PRD.Common.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Kingdee.K3.MFG.ServiceHelper">
       <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.ServiceHelper.dll</HintPath>
     </Reference>
