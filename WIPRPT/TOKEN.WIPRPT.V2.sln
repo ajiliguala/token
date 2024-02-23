@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOKEN.WIPRPT", "TOKEN.WIPRPT\TOKEN.WIPRPT.csproj", "{1DD52185-A472-4ACC-A522-5DA23F5F1A3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TOKEN.WIPRPT.v2", "TOKEN.WIPRPT\TOKEN.WIPRPT.v2.csproj", "{1DD52185-A472-4ACC-A522-5DA23F5F1A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {00DF173C-7922-40E5-BEF6-594981B7DB77}
+		SolutionGuid = {AC97F2F5-EDB5-4B10-B911-34E75524F211}
 	EndGlobalSection
 EndGlobal

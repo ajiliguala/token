@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7592B206-3520-4AE2-9CCC-7A921A9F4348}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Kingdee.K3.MFG.ENG.Business.PlugIn</RootNamespace>
+    <AssemblyName>Kingdee.K3.MFG.ENG.Business.PlugIn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.BusinessEntity">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.BusinessEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Model">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.VerificationHelper">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.VerificationHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Web">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Workflow.ServiceHelper">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.BOS.Workflow.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.BD.ServiceHelper">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.BD.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.BusinessCommon">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.BusinessCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.Common.BusinessEntity">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.Common.BusinessEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.ENG.Common.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.ENG.Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.ServiceHelper">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.MFG.SFC.Common.BusinessEntity">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.MFG.SFC.Common.BusinessEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.PLM.Common.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\Kingdee\K3Cloud\WebSite\bin\Kingdee.K3.PLM.Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AttachmentList.cs" />
+    <Compile Include="Base\BaseActivityEdit.cs" />
+    <Compile Include="Base\BaseControlEdit.cs" />
+    <Compile Include="Base\BaseControlList.cs" />
+    <Compile Include="Base\BomBopShowFilterRowPagePlugIn.cs" />
+    <Compile Include="Base\BOMConfigEdit.cs" />
+    <Compile Include="Base\BomConfigExpandMemServicePlugIn.cs" />
+    <Compile Include="Base\BOMConfigParamEdit.cs" />
+    <Compile Include="Base\BOMEdit.cs" />
+    <Compile Include="Base\BOMEdit4Bop.cs" />
+    <Compile Include="Base\BOMList.cs" />
+    <Compile Include="Base\BOMParamEdit.cs" />
+    <Compile Include="Base\BufferEdit.cs" />
+    <Compile Include="Base\BufferList.cs" />
+    <Compile Include="Base\CfgBillEdit.cs" />
+    <Compile Include="Base\EqmStatusChgLogList.cs" />
+    <Compile Include="Base\EquipmentEdit.cs" />
+    <Compile Include="Base\EquipmentList.cs" />
+    <Compile Include="Base\FlexibleLineRelateBomEdit.cs" />
+    <Compile Include="Base\FlowLineRelateBomList.cs" />
+    <Compile Include="Base\FlowProductLineList.cs" />
+    <Compile Include="Base\FormulaEdit.cs" />
+    <Compile Include="Base\FormulaList.cs" />
+    <Compile Include="Base\GetSendTimeList.cs" />
+    <Compile Include="Base\LabelTemplateEdit.cs" />
+    <Compile Include="Base\LabelTemplateList.cs" />
+    <Compile Include="Base\LadderLossEdit.cs" />
+    <Compile Include="Base\LadderLossList.cs" />
+    <Compile Include="Base\LineLocationBomParaEdit.cs" />
+    <Compile Include="Base\LineLocationBomParaList.cs" />
+    <Compile Include="Base\LineRelateBomList.cs" />
+    <Compile Include="Base\ModeVariableEditPlugIn.cs" />
+    <Compile Include="Base\MouldEdit.cs" />
+    <Compile Include="Base\MouldProdMixEdit.cs" />
+    <Compile Include="Base\PrdLineLocationEdit.cs" />
+    <Compile Include="Base\PrdLineLocationF8List.cs" />
+    <Compile Include="Base\PrdLineLocationList.cs" />
+    <Compile Include="Base\ProcessEdit.cs" />
+    <Compile Include="Base\ProcessList.cs" />
+    <Compile Include="Base\ProductModelBomEditPlugIn.cs" />
+    <Compile Include="Base\ProductModelEditPlugIn.cs" />
+    <Compile Include="Base\ProductModeRuleEdit.cs" />
+    <Compile Include="Base\ProductModleExpsEditPlugIn.cs" />
+    <Compile Include="Base\RepetitiveProductLineList.cs" />
+    <Compile Include="Base\ResourceEdit.cs" />
+    <Compile Include="Base\ResourceList.cs" />
+    <Compile Include="Base\RouteEdit.cs" />
+    <Compile Include="Base\RouteList.cs" />
+    <Compile Include="Base\ShiftEdit.cs" />
+    <Compile Include="Base\ShiftList.cs" />
+    <Compile Include="Base\ShiftSliceEdit.cs" />
+    <Compile Include="Base\SubStituteEdit.cs" />
+    <Compile Include="Base\SubStituteList.cs" />
+    <Compile Include="Base\SubStituteView.cs" />
+    <Compile Include="Base\SubStituteViewForECN.cs" />
+    <Compile Include="Base\SubStituteViewForPRD.cs" />
+    <Compile Include="Base\SubStituteViewForSUB.cs" />
+    <Compile Include="Base\TechDocEdit.cs" />
+    <Compile Include="Base\TechDocList.cs" />
+    <Compile Include="Base\TecParameterEdit.cs" />
+    <Compile Include="Base\TecParameterList.cs" />
+    <Compile Include="Base\TempCalEdit.cs" />
+    <Compile Include="Base\TempCalList.cs" />
+    <Compile Include="Base\WorkCalCustomEdit.cs" />
+    <Compile Include="Base\WorkCalCustomEditBuilder.cs" />
+    <Compile Include="Base\WorkCalEdit.cs" />
+    <Compile Include="Base\WorkCalTplEdit.cs" />
+    <Compile Include="Base\WorkCalTplEdit_CreateCalendar.cs" />
+    <Compile Include="Base\WorkCalTplEdit_CreateCalendarWf.cs" />
+    <Compile Include="Base\WorkCalTplList.cs" />
+    <Compile Include="Base\WorkCenterBaseEdit.cs" />
+    <Compile Include="Base\WorkCenterBaseList.cs" />
+    <Compile Include="Base\WorkCenterEdit.cs" />
+    <Compile Include="Base\WorkCenterList.cs" />
+    <Compile Include="Bill\BomExpandForwardEdit.cs" />
+    <Compile Include="Bill\ECNOrderEdit.cs" />
+    <Compile Include="Bill\ECNOrderList.cs" />
+    <Compile Include="Bill\ECRApplyEdit.cs" />
+    <Compile Include="Bill\MaterialReceiveBill.cs" />
+    <Compile Include="Bill\TestEntityEdit.cs" />
+    <Compile Include="DynamicForm\BatchSubStitueEdit.cs" />
+    <Compile Include="DynamicForm\BatchSubStitueFilter.cs" />
+    <Compile Include="DynamicForm\BatchSubStitueUserParamEdit.cs" />
+    <Compile Include="DynamicForm\BillFieldSelectorEdit.cs" />
+    <Compile Include="DynamicForm\BillMiddleEdit.cs" />
+    <Compile Include="DynamicForm\BOMAuxPtyBulkEdit.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\AbstractClainLink.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\AuditClainLink.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\BomBatchAllocateWizardEdit.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\BOMBatchAllocExc.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\MtrlBatchAllocateEdit.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\OptrChain.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\SaveClainLink.cs" />
+    <Compile Include="DynamicForm\BOMBatchAllocate\SubmitClainLink.cs" />
+    <Compile Include="DynamicForm\BomBatchEditBomFilter.cs" />
+    <Compile Include="DynamicForm\BomBatchEditChildEdit.cs" />
+    <Compile Include="DynamicForm\BomBatchEditFilter.cs" />
+    <Compile Include="DynamicForm\BomBatchEditList.cs" />
+    <Compile Include="DynamicForm\BomBatchEditParentEdit.cs" />
+    <Compile Include="DynamicForm\BOMBulkEdit.cs" />
+    <Compile Include="DynamicForm\BOMCacheEdit.cs" />
+    <Compile Include="DynamicForm\BOMChangeFieldContent.cs" />
+    <Compile Include="DynamicForm\BomComparison.cs" />
+    <Compile Include="DynamicForm\BOMForbidReson.cs" />
+    <Compile Include="DynamicForm\BomListEdit.cs" />
+    <Compile Include="DynamicForm\BomModifyLogConfigEdit.cs" />
+    <Compile Include="DynamicForm\BomModifyLogEdit.cs" />
+    <Compile Include="DynamicForm\BomQueryBackward.cs" />
+    <Compile Include="DynamicForm\BomQueryBackwardFilter.cs" />
+    <Compile Include="DynamicForm\BomQueryCommonFuncs.cs" />
+    <Compile Include="DynamicForm\BomQueryCost.cs" />
+    <Compile Include="DynamicForm\BomQueryForward.cs" />
+    <Compile Include="DynamicForm\BomQueryForwardFilter.cs" />
+    <Compile Include="DynamicForm\BomQueryIntegration.cs" />
+    <Compile Include="DynamicForm\BomQueryIntegrationFilter.cs" />
+    <Compile Include="DynamicForm\BomSearchRow.cs" />
+    <Compile Include="DynamicForm\BomSyncCheckScheduleEdit.cs" />
+    <Compile Include="DynamicForm\BOMSynCheckEdit.cs" />
+    <Compile Include="DynamicForm\BomSynsUpdatePpBom.cs" />
+    <Compile Include="DynamicForm\BomTree.cs" />
+    <Compile Include="DynamicForm\BOMTreeCopyEdit.cs" />
+    <Compile Include="DynamicForm\BopExpandEdit.cs" />
+    <Compile Include="DynamicForm\CheckBOPEdit.cs" />
+    <Compile Include="DynamicForm\ChildPrdOfferMaterialEdit.cs" />
+    <Compile Include="DynamicForm\ChildPrdSupplyMaterialEdit.cs" />
+    <Compile Include="DynamicForm\ClearOldMtrlScheduleEdit.cs" />
+    <Compile Include="DynamicForm\CreateTempCalendar.cs" />
+    <Compile Include="DynamicForm\EcnAddNItemEdit.cs" />
+    <Compile Include="DynamicForm\ECNClearLog.cs" />
+    <Compile Include="DynamicForm\ECNClearLogBatchDelete.cs" />
+    <Compile Include="DynamicForm\ECNClearLogFilter.cs" />
+    <Compile Include="DynamicForm\ECNClearOldMtrl.cs" />
+    <Compile Include="DynamicForm\ECNInactiveAnalyse.cs" />
+    <Compile Include="DynamicForm\ECNInactiveAnalyseFilter.cs" />
+    <Compile Include="DynamicForm\ECNQueryEdit.cs" />
+    <Compile Include="DynamicForm\ECNResultEdit.cs" />
+    <Compile Include="DynamicForm\ECNShowResultEdit.cs" />
+    <Compile Include="DynamicForm\ENGParameterBulider.cs" />
+    <Compile Include="DynamicForm\ENGParameterEdit.cs" />
+    <Compile Include="DynamicForm\ENG_BomQueryCostFilter.cs" />
+    <Compile Include="DynamicForm\EQMStatusAlertTypeBatEdit.cs" />
+    <Compile Include="DynamicForm\EqmStatusChgLogListDym.cs" />
+    <Compile Include="DynamicForm\EqmStatusChgLogListDymFilter.cs" />
+    <Compile Include="DynamicForm\EquipmentLogDeleteEdit.cs" />
+    <Compile Include="DynamicForm\EquipmentStatusChangeEdit.cs" />
+    <Compile Include="DynamicForm\GenerateParaFromBopEdit.cs" />
+    <Compile Include="DynamicForm\HandleTypeModifyEdit.cs" />
+    <Compile Include="DynamicForm\ListECNFeatureCheckPlugIn.cs" />
+    <Compile Include="DynamicForm\ListPDBFeatureCheckPlugIn.cs" />
+    <Compile Include="DynamicForm\MaterialDeleteQuery.cs" />
+    <Compile Include="DynamicForm\MaterialEditFilter.cs" />
+    <Compile Include="DynamicForm\MaterialForbiddenQuery.cs" />
+    <Compile Include="DynamicForm\MaterialForbidQuery.cs" />
+    <Compile Include="DynamicForm\MaterialSubStituteList.cs" />
+    <Compile Include="DynamicForm\MaterialTree.cs" />
+    <Compile Include="DynamicForm\MdlCfgDynPanelEdit.cs" />
+    <Compile Include="DynamicForm\MdlCfgEdit.cs" />
+    <Compile Include="DynamicForm\MdlCfgExecEdit.cs" />
+    <Compile Include="DynamicForm\MdlCfgFixPanelEdit.cs" />
+    <Compile Include="DynamicForm\MdlFunctionLabEdit.cs" />
+    <Compile Include="DynamicForm\ModelSysLableShow.cs" />
+    <Compile Include="DynamicForm\ModelVariableShow.cs" />
+    <Compile Include="DynamicForm\MyComparer.cs" />
+    <Compile Include="DynamicForm\PLMDocumentSelectDF.cs" />
+    <Compile Include="DynamicForm\ProductModelBomEntryMoveToEdit.cs" />
+    <Compile Include="DynamicForm\ProductStructureView.cs" />
+    <Compile Include="DynamicForm\QueryMaterialFromBufferEdit.cs" />
+    <Compile Include="DynamicForm\RouteBatchEdit.cs" />
+    <Compile Include="DynamicForm\RouteBatchFieldsEdit.cs" />
+    <Compile Include="DynamicForm\SelectProductLine.cs" />
+    <Compile Include="DynamicForm\ShowResultEdit.cs" />
+    <Compile Include="DynamicForm\SubstitutionSynBOMEdit.cs" />
+    <Compile Include="DynamicForm\SubstitutionSynBOMFilter.cs" />
+    <Compile Include="DynamicForm\TecParamValueEdit.cs" />
+    <Compile Include="DynamicForm\TreeBomQueryForward.cs" />
+    <Compile Include="DynamicForm\UseFlexItemInfo.cs" />
+    <Compile Include="DynamicForm\WizardForm\BomBatchEditWizardPlugIn.cs" />
+    <Compile Include="DynamicForm\WizardForm\MateInfoEditSyncBomWizardPlugin.cs" />
+    <Compile Include="DynamicForm\WorkCalSetup.cs" />
+    <Compile Include="ECNControler\AbstractCobyControler.cs" />
+    <Compile Include="ECNControler\AbstractItemControler.cs" />
+    <Compile Include="ECNControler\AlterCobyControler.cs" />
+    <Compile Include="ECNControler\AlterItemControler.cs" />
+    <Compile Include="ECNControler\ChooseRepControler.cs" />
+    <Compile Include="ECNControler\CustomBatchFillControler.cs" />
+    <Compile Include="ECNControler\DeleteCobyControler.cs" />
+    <Compile Include="ECNControler\DeleteItemControler.cs" />
+    <Compile Include="ECNControler\ECNQueryControler.cs" />
+    <Compile Include="ECNControler\EffectChangeControler.cs" />
+    <Compile Include="ECNControler\ExpireCobyControler.cs" />
+    <Compile Include="ECNControler\ExpireItemControler.cs" />
+    <Compile Include="ECNControler\NewCobyControler.cs" />
+    <Compile Include="ECNControler\NewItemControler.cs" />
+    <Compile Include="ECNControler\NewNItemControler.cs" />
+    <Compile Include="ECNControler\RemoveCobyControler.cs" />
+    <Compile Include="ECNControler\RemoveItemControler.cs" />
+    <Compile Include="ECNControler\SetupRepControler.cs" />
+    <Compile Include="ECNControler\SimEffectChangeControler.cs" />
+    <Compile Include="ECNControler\SyncPPBomControler.cs" />
+    <Compile Include="MainPrdConsumeMaterialEdit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepeateLineRelateBomList.cs" />
+    <Compile Include="Utils\ENGBillUtil.cs" />
+    <Compile Include="Utils\LadderLossUtils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
